@@ -11,10 +11,7 @@
 ##
 ## you can use matrix$set(matrix(1:100, 100, 100)) to set new matrix data and clear the cache
 
-
-
 ## defines functions for storing matrix information and stores matrix data if given in parameter
-
 makeCacheMatrix <- function(x = matrix()) {
     
     ## initialize cache variable for inversed matrix
@@ -41,10 +38,8 @@ makeCacheMatrix <- function(x = matrix()) {
          getInverse = getInverse)
 }
 
-
 ## Return a matrix that is the inverse of 'x'
 ## use cached value if exist or calculate inverse matrix and cache calculated data
-
 cacheSolve <- function(x, ...) {
         
     ## try to get cached data
